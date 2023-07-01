@@ -1,5 +1,6 @@
 package com.example.sesion_4
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,10 +10,10 @@ import android.widget.CheckBox
 import android.widget.EditText
 
 class Formulario : Activity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_formulario)
-
         val nombre = findViewById<EditText>(R.id.nombre)
         val email = findViewById<EditText>(R.id.email)
         val comentarios = findViewById<EditText>(R.id.comentarios)
@@ -41,5 +42,7 @@ class Formulario : Activity() {
                 }
             }
         }
+
+
     }
 }
